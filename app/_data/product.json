@@ -1,0 +1,202 @@
+[
+  {
+    "id": "01",
+    "title": "Chicken Burger",
+    "price": 24.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01_xd2bub.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01.1_s6oufw.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01.3_ywqkpp.jpg",
+    "category": {
+      "id": "63c16b43f307c9215fab261f",
+      "name": "Burger"
+    },
+    "category_id": "63c16b43f307c9215fab261f",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque. "
+  },
+
+  {
+    "id": "02",
+    "title": "Vegetarian Pizza",
+    "price": 115.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.1_vjipsi.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.2_mmtrqb.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.3_rum3uf.jpg",
+    "category": {
+      "id": "63c16ba29be9da43204665ff",
+      "name": "Pizza"
+    },
+    "category_id": "63c16ba29be9da43204665ff",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "03",
+    "title": "Double Cheese Margherita",
+    "price": 110.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_3.1_ftmx5k.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_3.2_nsgzik.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_3.3_gsrrcc.jpg",
+    "category": {
+      "id": "63c16ba29be9da43204665ff",
+      "name": "Pizza"
+    },
+    "category_id": "63c16ba29be9da43204665ff",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "04",
+    "title": "Maxican Green Wave",
+    "price": 110.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.1_bdymkg.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.2_trt1ys.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.3_roxkev.png",
+    "category": {
+      "id": "63c16ba29be9da43204665ff",
+      "name": "Pizza"
+    },
+    "category_id": "63c16ba29be9da43204665ff",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "05",
+    "title": "Cheese Burger",
+    "price": 24.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_04_zkhvtf.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616677/fastfood/product_08_tlqoby.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616677/fastfood/product_09_tzlmxg.jpg",
+    "category": {
+      "id": "63c16b43f307c9215fab261f",
+      "name": "Burger"
+    },
+    "category_id": "63c16b43f307c9215fab261f",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+  {
+    "id": "06",
+    "title": "Royal Cheese Burger",
+    "price": 24.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01_xd2bub.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01.1_s6oufw.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01.3_ywqkpp.jpg",
+    "category": {
+      "id": "63c16b43f307c9215fab261f",
+      "name": "Burger"
+    },
+    "category_id": "63c16b43f307c9215fab261f",
+
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "07",
+    "title": "Seafood Pizza",
+    "price": 115.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.2_mmtrqb.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.1_vjipsi.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.3_rum3uf.jpg",
+    "category": {
+      "id": "63c16ba29be9da43204665ff",
+      "name": "Pizza"
+    },
+    "category_id": "63c16ba29be9da43204665ff",
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "08",
+    "title": "Thin Cheese Pizza",
+    "price": 110.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_3.2_nsgzik.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_3.1_ftmx5k.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_3.3_gsrrcc.jpg",
+    "category": {
+      "id": "63c16ba29be9da43204665ff",
+      "name": "Pizza"
+    },
+    "category_id": "63c16ba29be9da43204665ff",
+
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "09",
+    "title": "Pizza With Mushroom",
+    "price": 110.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.2_trt1ys.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.1_bdymkg.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.3_roxkev.png",
+    "category": {
+      "id": "63c16ba29be9da43204665ff",
+      "name": "Pizza"
+    },
+    "category_id": "63c16ba29be9da43204665ff",
+
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "10",
+    "title": "Classic Hamburger",
+    "price": 24.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616677/fastfood/product_08_tlqoby.jpg",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_04_zkhvtf.jpg",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616677/fastfood/product_09_tzlmxg.jpg",
+    "category": {
+      "id": "63c16b43f307c9215fab261f",
+      "name": "Burger"
+    },
+    "category_id": "63c16b43f307c9215fab261f",
+
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "11",
+    "title": "Crunchy Bread ",
+    "price": 35.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_1_ieg6ir.png",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_2_sljrpq.png",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_3_vdxsuy.png",
+    "category": {
+      "id": "63c16bddb955cdda7d1aace7",
+      "name": "Bread"
+    },
+    "category_id": "63c16bddb955cdda7d1aace7",
+
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "12",
+    "title": "Delicious Bread ",
+    "price": 35.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_2_sljrpq.png",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_1_ieg6ir.png",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_3_vdxsuy.png",
+    "category": {
+      "id": "63c16bddb955cdda7d1aace7",
+      "name": "Bread"
+    },
+    "category_id": "63c16bddb955cdda7d1aace7",
+
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  },
+
+  {
+    "id": "13",
+    "title": "Loaf Bread ",
+    "price": 35.0,
+    "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_3_vdxsuy.png",
+    "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_1_ieg6ir.png",
+    "image03": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_3_vdxsuy.png",
+    "category": {
+      "id": "63c16bddb955cdda7d1aace7",
+      "name": "Bread"
+    },
+    "category_id": "63c16bddb955cdda7d1aace7",
+
+    "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ad et est, fugiat repudiandae neque illo delectus commodi magnam explicabo autem voluptates eaque velit vero facere mollitia. Placeat rem, molestiae error obcaecati enim doloribus impedit aliquam, maiores qui minus neque."
+  }
+]
