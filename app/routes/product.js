@@ -3,7 +3,7 @@ const router = express.Router();
 var asyncHandler = require(__path_middleware + 'async');
 var ErrorResponse = require(__path_utils + 'ErrorResponse');
 var { protect, authorize } = require(__path_middleware + 'auth');
-
+const cloudinary = require('cloudinary').v2;
 const controllerName = 'product';
 // const MainValidate	= require(__path_validates + controllerName);
 const { check, validationResult } = require("express-validator");
@@ -11,6 +11,7 @@ const notify = require(__path_configs + 'notify');
 const MainModel = require(__path_models + controllerName);
 const util = require('node:util');
 
+const uploader = require('../middleware/uploader');
 
 /* GET users listing. */
 router.get("/", asyncHandler(async (req, res, next) => {
@@ -32,15 +33,31 @@ router.get("/:id", asyncHandler(async (req, res, next) => {
     data: data
   })
 }))
+var cpUpload = uploader.fields([
+  { name: 'image01' },
+  { name: 'image02' },
+  { name: 'image03' },
+]);
+router.post("/add", cpUpload, protect, authorize("publisher", "admin"), asyncHandler(async (req, res, next) => {
 
-router.post("/add", protect, authorize("publisher", "admin"), asyncHandler(async (req, res, next) => {
+  const fileData = req.files;
+  req.body.image01 = fileData.image01[0].path;
+  req.body.image02 = fileData.image02[0].path;
+  req.body.image03 = fileData.image03[0].path;
   const error = await validateReq(req, res, next);
+  if(error)
+  {
+    if(fileData){
+      cloudinary.api.delete_resources([fileData.image01[0].filename, fileData.image02[0].filename, fileData.image03[0].filename])
+    }
+  }
   // let params = [];
   // params.id = makeId(8);
   // params.name = req.body.name;
   // params.status = req.body.status;
   if (!error) {
     const data = await MainModel.create(req.body);
+    console.log('data',data)
     res.status(200).json({
       success: true,
       data: data
@@ -94,12 +111,12 @@ module.exports = router;
 
 const validateReq = async (req, res, next) => {
   const options = {
-    name: { min: 5, max: 80 },
-    description: { min: 10, max: 500 },
+    title: { min: 5, max: 80 },
+    desc: { min: 10, max: 500 },
 
   }
-  await check('name', util.format(notify.ERROR_NAME, options.name.min, options.name.max)).isLength({ min: options.name.min, max: options.name.max }).run(req);
-  await check('description', util.format(notify.ERROR_NAME, options.description.min, options.description.max)).isLength({ min: options.description.min, max: options.description.max }).run(req);
+  await check('title', util.format(notify.ERROR_NAME, options.title.min, options.title.max)).isLength({ min: options.title.min, max: options.title.max }).run(req);
+  await check('desc', util.format(notify.ERROR_NAME, options.desc.min, options.desc.max)).isLength({ min: options.desc.min, max: options.desc.max }).run(req);
   let errors = validationResult(req);
   if (errors.isEmpty() === false) {
     next(new ErrorResponse(400, errors));

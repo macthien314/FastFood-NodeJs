@@ -1,5 +1,5 @@
 const MainModel = require(__path_schemas + 'product');
-
+const Category = require(__path_schemas + 'category');
 module.exports = {
     listItems: (params, option) => {
         // coppy params
