@@ -35,7 +35,7 @@ module.exports = {
 
         //pagination
         const page  = parseInt(params.page) || 1;
-        const limit = parseInt(params.limit) || 3;
+        const limit = parseInt(params.limit) || 10;
         const skip  = ( page-1 )*limit;
 
         if(option.task == 'all'){

@@ -57,7 +57,6 @@ router.post("/add", asyncHandler( async (req, res, next) => {
 
 router.put("/edit/:id", asyncHandler(async (req, res, next) => {
   const error = await validateReq(req, res, next);
-
   if(!error){
     let body = req.body;
     const data = await MainModel.editItem({ 'id': req.params.id, 'body': body }, { 'task': 'edit' });
@@ -99,13 +98,13 @@ module.exports = router;
 const validateReq = async (req, res, next) =>{
   const options = {
     username: { min: 6, max: 100 },
-    enum: ['user', 'publisher'],
-    password: { min: 4, max: 20 },
+    // enum: ['user', 'publisher'],
+    password: { min: 4, max: 1000 },
 
   }
   await check('username', util.format(notify.ERROR_NAME, options.username.min, options.username.max)).isLength({ min: options.username.min, max: options.username.max }).run(req);
   await check('email',util.format(notify.ERROR_EMAIL)).matches(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/).run(req);
-  await check('role',util.format(notify.ERROR_ROLE)).isIn(options.enum).run(req);
+  // await check('role',util.format(notify.ERROR_ROLE)).isIn(options.enum).run(req);
   await check('password',util.format(notify.ERROR_NAME, options.password.min, options.password.max)).isLength({ min: options.password.min, max: options.password.max }).run(req);
   let errors = validationResult(req);
   if(errors.isEmpty() === false) {

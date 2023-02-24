@@ -57,7 +57,6 @@ router.post("/add", cpUpload, protect, authorize("publisher", "admin"), asyncHan
   // params.status = req.body.status;
   if (!error) {
     const data = await MainModel.create(req.body);
-    console.log('data',data)
     res.status(200).json({
       success: true,
       data: data
@@ -68,16 +67,16 @@ router.post("/add", cpUpload, protect, authorize("publisher", "admin"), asyncHan
 }))
 
 router.put("/edit/:id", protect, authorize("publisher", "admin"), asyncHandler(async (req, res, next) => {
-  const error = await validateReq(req, res, next);
+  // const error = await validateReq(req, res, next);
 
-  if (!error) {
+  // if (!error) {
     let body = req.body;
     const data = await MainModel.editItems({ 'id': req.params.id, 'body': body }, { 'task': 'edit' });
     res.status(200).json({
       success: true,
       data: data
     })
-  }
+  // }
 }))
 
 router.delete("/delete/:id", protect, authorize("publisher", "admin"), asyncHandler(async (req, res, next) => {
