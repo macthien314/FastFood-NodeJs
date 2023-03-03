@@ -12,7 +12,7 @@ module.exports = {
         const { email, password } = item;
         const result = await MainModel.findByCredentials(email, password);
         if (result.err) {
-            res.status(401).json({ success: true, massage: result.err })
+            res.status(401).json({ success: true, message: result.err })
             return false;
         }
         return await result.user.getSignedJwtToken()

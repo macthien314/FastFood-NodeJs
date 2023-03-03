@@ -65,7 +65,7 @@ router.post("/add", cpUpload, protect, authorize("publisher", "admin"), asyncHan
 
 }))
 
-router.put("/edit/:id", cpUpload, protect, authorize("publisher", "admin"), asyncHandler(async (req, res, next) => {
+router.put("/edit/:id", protect, authorize("publisher", "admin"), asyncHandler(async (req, res, next) => {
   // const error = await validateReq(req, res, next);
   
   // if (!error) {
