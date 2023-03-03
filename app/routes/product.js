@@ -45,9 +45,8 @@ router.post("/add", cpUpload, protect, authorize("publisher", "admin"), asyncHan
   req.body.image02 = fileData.image02[0].path;
   req.body.image03 = fileData.image03[0].path;
   const error = await validateReq(req, res, next);
-  if(error)
-  {
-    if(fileData){
+  if (error) {
+    if (fileData) {
       cloudinary.api.delete_resources([fileData.image01[0].filename, fileData.image02[0].filename, fileData.image03[0].filename])
     }
   }
@@ -66,16 +65,16 @@ router.post("/add", cpUpload, protect, authorize("publisher", "admin"), asyncHan
 
 }))
 
-router.put("/edit/:id", protect, authorize("publisher", "admin"), asyncHandler(async (req, res, next) => {
+router.put("/edit/:id", cpUpload, protect, authorize("publisher", "admin"), asyncHandler(async (req, res, next) => {
   // const error = await validateReq(req, res, next);
-
+  
   // if (!error) {
-    let body = req.body;
-    const data = await MainModel.editItems({ 'id': req.params.id, 'body': body }, { 'task': 'edit' });
-    res.status(200).json({
-      success: true,
-      data: data
-    })
+  let body = req.body;
+  const data = await MainModel.editItems({ 'id': req.params.id, 'body': body }, { 'task': 'edit' });
+  res.status(200).json({
+    success: true,
+    data: data
+  })
   // }
 }))
 
@@ -123,3 +122,6 @@ const validateReq = async (req, res, next) => {
   }
   return false;
 }
+
+
+

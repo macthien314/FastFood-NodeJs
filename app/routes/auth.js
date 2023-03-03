@@ -80,6 +80,7 @@ const saveCookieResponse = (res,statusCode,token) => {
     const options = {
         expirers : new Date (
             Date.now() + systemConfig.COOKIE_EXP * 24 * 60 * 60 * 1000
+            // Date.now() + 10000
         ),
         httpOnly : true
     }
