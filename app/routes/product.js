@@ -10,6 +10,7 @@ const { check, validationResult } = require("express-validator");
 const notify = require(__path_configs + 'notify');
 const MainModel = require(__path_models + controllerName);
 const util = require('node:util');
+var {protect , authorize}   = require(__path_middleware + 'auth')
 
 const uploader = require('../middleware/uploader');
 
@@ -109,11 +110,11 @@ module.exports = router;
 
 const validateReq = async (req, res, next) => {
   const options = {
-    title: { min: 5, max: 80 },
+    name: { min: 5, max: 80 },
     desc: { min: 10, max: 500 },
 
   }
-  await check('title', util.format(notify.ERROR_NAME, options.title.min, options.title.max)).isLength({ min: options.title.min, max: options.title.max }).run(req);
+  await check('name', util.format(notify.ERROR_NAME, options.name.min, options.name.max)).isLength({ min: options.name.min, max: options.name.max }).run(req);
   await check('desc', util.format(notify.ERROR_NAME, options.desc.min, options.desc.max)).isLength({ min: options.desc.min, max: options.desc.max }).run(req);
   let errors = validationResult(req);
   if (errors.isEmpty() === false) {

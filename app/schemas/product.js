@@ -3,7 +3,7 @@ const databaseConfig = require(__path_configs + 'database');
 const { Schema } = require('mongoose');
 
 var schema = new mongoose.Schema({
-	title: String,
+	name: String,
 	category: {
 		id: { type: Schema.Types.ObjectId },
 		name: String

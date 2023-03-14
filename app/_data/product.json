@@ -1,7 +1,7 @@
 [
   {
     "id": "01",
-    "title": "Chicken Burger",
+    "name": "Chicken Burger",
     "price": 24.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01_xd2bub.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01.1_s6oufw.jpg",
@@ -16,7 +16,7 @@
 
   {
     "id": "02",
-    "title": "Vegetarian Pizza",
+    "name": "Vegetarian Pizza",
     "price": 115.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.1_vjipsi.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.2_mmtrqb.jpg",
@@ -31,7 +31,7 @@
 
   {
     "id": "03",
-    "title": "Double Cheese Margherita",
+    "name": "Double Cheese Margherita",
     "price": 110.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_3.1_ftmx5k.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_3.2_nsgzik.jpg",
@@ -46,7 +46,7 @@
 
   {
     "id": "04",
-    "title": "Maxican Green Wave",
+    "name": "Maxican Green Wave",
     "price": 110.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.1_bdymkg.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.2_trt1ys.jpg",
@@ -61,7 +61,7 @@
 
   {
     "id": "05",
-    "title": "Cheese Burger",
+    "name": "Cheese Burger",
     "price": 24.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_04_zkhvtf.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616677/fastfood/product_08_tlqoby.jpg",
@@ -75,7 +75,7 @@
   },
   {
     "id": "06",
-    "title": "Royal Cheese Burger",
+    "name": "Royal Cheese Burger",
     "price": 24.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01_xd2bub.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616674/fastfood/product_01.1_s6oufw.jpg",
@@ -91,7 +91,7 @@
 
   {
     "id": "07",
-    "title": "Seafood Pizza",
+    "name": "Seafood Pizza",
     "price": 115.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.2_mmtrqb.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_2.1_vjipsi.jpg",
@@ -106,7 +106,7 @@
 
   {
     "id": "08",
-    "title": "Thin Cheese Pizza",
+    "name": "Thin Cheese Pizza",
     "price": 110.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616675/fastfood/product_3.2_nsgzik.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_3.1_ftmx5k.jpg",
@@ -122,7 +122,7 @@
 
   {
     "id": "09",
-    "title": "Pizza With Mushroom",
+    "name": "Pizza With Mushroom",
     "price": 110.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.2_trt1ys.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_4.1_bdymkg.jpg",
@@ -138,7 +138,7 @@
 
   {
     "id": "10",
-    "title": "Classic Hamburger",
+    "name": "Classic Hamburger",
     "price": 24.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616677/fastfood/product_08_tlqoby.jpg",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616676/fastfood/product_04_zkhvtf.jpg",
@@ -154,7 +154,7 @@
 
   {
     "id": "11",
-    "title": "Crunchy Bread ",
+    "name": "Crunchy Bread ",
     "price": 35.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_1_ieg6ir.png",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_2_sljrpq.png",
@@ -170,7 +170,7 @@
 
   {
     "id": "12",
-    "title": "Delicious Bread ",
+    "name": "Delicious Bread ",
     "price": 35.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_2_sljrpq.png",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_1_ieg6ir.png",
@@ -186,7 +186,7 @@
 
   {
     "id": "13",
-    "title": "Loaf Bread ",
+    "name": "Loaf Bread ",
     "price": 35.0,
     "image01": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_3_vdxsuy.png",
     "image02": "https://res.cloudinary.com/drayatc08/image/upload/v1673616672/fastfood/bread_1_ieg6ir.png",
