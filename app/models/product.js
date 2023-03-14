@@ -1,7 +1,7 @@
 const MainModel = require(__path_schemas + 'product');
-const Category = require(__path_schemas + 'category');
 module.exports = {
     listItems: (params, option) => {
+
         // coppy params
         const queryFind = { ...params };
         let find, select, sort;
@@ -10,6 +10,10 @@ module.exports = {
 
         // Remove fields 
         removeFields.forEach(param => delete queryFind[param]);
+
+        if (!params.name) {
+            params.name = "all";
+        }
 
         // Create query string
         let queryStr = JSON.stringify(queryFind);
@@ -33,6 +37,16 @@ module.exports = {
         const page = parseInt(params.page) || 1;
         const limit = parseInt(params.limit);
         const skip = (page - 1) * limit;
+
+
+
+        if (!params.name || params.name === "") {
+            find = {};
+        } else if (params.name === "all") {
+            find = {};
+        } else {
+            find.name = { $regex: params.name, $options: 'i' };
+        }
 
         if (option.task === 'all') {
             return MainModel
@@ -65,6 +79,7 @@ module.exports = {
                 .updateOne({ _id: params.id }, params.body);
 
         }
+
     },
     event: async (params, option) => {
         let number = 1
