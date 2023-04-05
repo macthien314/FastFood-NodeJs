@@ -40,6 +40,7 @@ global.__path_validates = __path_app + pathConfig.folder_validates + '/';
 global.__path_middleware = __path_app + pathConfig.folder_middleware + '/';
 global.__path_utils = __path_app + pathConfig.folder_utils + '/';
 
+
 const mongoose = require('mongoose');
 const systemConfig = require(__path_configs + 'system');
 const databaseConfig = require(__path_configs + 'database');

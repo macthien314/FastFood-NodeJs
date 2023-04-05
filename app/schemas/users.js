@@ -11,6 +11,7 @@ var schema = new mongoose.Schema({
     username 		    : String,
 	email		    	: String,
 	role		    	: String,
+	image               : String,
 	password		    : String,
 	resetPassToken	    : String,
 	resetPassTokenExp   : String,

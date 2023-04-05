@@ -11,7 +11,8 @@ const util = require('node:util');
 const asyncHandler = require('../middleware/async');
 const ErrorResponse = require('../utils/ErrorResponse');
 var { protect, authorize } = require(__path_middleware + 'auth')
-
+const uploader = require('../middleware/uploader');
+const cloudinary = require('cloudinary').v2;
 /* GET users listing. */
 router.get("/", asyncHandler(async (req, res, next) => {
 
@@ -38,9 +39,20 @@ router.get("/:id", asyncHandler(async (req, res, next) => {
     data: data
   })
 }))
-
-router.post("/add", protect, authorize("admin"), asyncHandler(async (req, res, next) => {
+var cpUpload = uploader.fields([
+  { name: 'image' },
+]);
+router.post("/add", cpUpload, protect, authorize("admin"), asyncHandler(async (req, res, next) => {
   const error = await validateReq(req, res, next);
+  const fileData = req.files;
+  req.body.image = fileData.image[0].path;
+
+
+  if (error) {
+    if (fileData) {
+      cloudinary.api.delete_resources([fileData.image[0].filename])
+    }
+  }
   // let params = [];
   // params.id = makeId(8);
   // params.name = req.body.name;
@@ -56,8 +68,19 @@ router.post("/add", protect, authorize("admin"), asyncHandler(async (req, res, n
 
 }))
 
-router.put("/edit/:id", asyncHandler(async (req, res, next) => {
+router.put("/edit/:id", cpUpload, asyncHandler(async (req, res, next) => {
   const error = await validateReq(req, res, next);
+
+  const fileData = req.files;
+  if (fileData.image) {
+    req.body.image = fileData.image[0].path;
+  }
+
+  if (error) {
+    if (fileData) {
+      cloudinary.api.delete_resources([fileData.image[0].filename])
+    }
+  }
   if (!error) {
     let body = req.body;
     const data = await MainModel.editItem({ 'id': req.params.id, 'body': body }, { 'task': 'edit' });
